@@ -1,0 +1,395 @@
+*
+{
+    margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer{
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+/*===========================================================================================================*/
+/*--------------------------------------------------Logo Colors---------------------------------------------  */
+.fa-instagram {
+  background: #7638fa; /* Fallback color */
+  background: linear-gradient(
+    45deg,
+    #ffd600,
+    #ff7a00,
+    #ff0069,
+    #d300c5,
+    #7638fa
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-phone{
+    color: blue;
+}
+.fa-clover{
+    font-size: 60px;
+    color: rgb(48, 233, 48);
+}
+.fa-clover1{
+    font-size: 20px;
+    color: rgb(48, 233, 48);
+}
+/*------------------------------------- LOCATION DOT AND HOVER EFFECT--------------------------------------- */
+.fa-location-dot{
+    font-size: 25px;
+    padding-left: 120px;
+    color: rgb(56, 6, 239);
+}
+.fa-location-dot:hover {
+    transform: scale(1.05) !important;
+}
+
+.fa-location-dot {
+    transition: transform 0.4s ease;
+}
+
+.fa-location-dot:hover .fa-location-dot {
+    transform: scale(1.1);
+} 
+/*--------------------------------------------------Logo Color---------------------------------------------  */
+/*===========================================================================================================*/
+ 
+
+body{
+    background-color: rgba(211, 211, 211, 0.03);
+}
+
+.container1
+{
+    background-color: #e76f51;
+}
+/* Cambria, Cochin, Georgia, Times, 'Times New Roman', serif */
+.text
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    align-items: center;
+}
+.text1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    align-items: center;
+}
+.text2
+{
+    font-size: 13px;
+    margin-left: 35px;
+}
+
+.logos
+{
+    font-size: 20px;
+    align-items: center;
+}
+.logos1
+{
+    font-size: 16px;
+    align-items: center;
+}
+
+.number
+{
+    font-size: 13px;
+    align-items: center;
+}
+
+.insta-id
+{
+    font-size: 13px;
+    align-items: center;
+}
+a{
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   Navbar Links: Animated Red Underline (Excluding Dropdowns)
+   ========================================= */
+
+/* Ensure the link can hold absolute positioning, but IGNORE dropdown toggles */
+.navbar-nav .nav-link:not(.dropdown-toggle) {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* The starting state of the red line (hidden) */
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    bottom: 4px; /* Adjust this to move the line closer/further from the text */
+    left: 8px; /* Offsets Bootstrap's default left padding */
+    background-color: #e32828; /* The red color */
+    transition: width 0.3s ease-in-out;
+}
+
+/* The hover state: Draw the line */
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
+    width: calc(100% - 16px); /* Spans the text width, minus the padding */
+}
+
+/* Optional: Make the text turn red on hover as well */
+.navbar-nav .nav-link:not(.dropdown-toggle):hover {
+    color: #e32828 !important; 
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------DROPDOWN ANIMATION----------------------------------------- */
+/* =========================================
+   1. Dropdown Container Animation & Styling
+   ========================================= */
+
+/* Target desktop view for hover effects (Bootstrap breakpoints) */
+@media all and (min-width: 992px) {
+    .navbar .nav-item.dropdown .dropdown-menu {
+        display: block; /* Required to allow transitions */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px); /* Start slightly lower for slide effect */
+        transition: all 0.3s ease-in-out;
+        border: none;
+        border-top: 3px solid #e32828; /* The red top border */
+        border-radius: 0; /* Square edges as seen in the video */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+        margin-top: 0;
+    }
+
+    /* Trigger the fade and slide on hover */
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0); 
+    }
+}
+
+/* =========================================
+   2. Dropdown Item Text Shift & Colors
+   ========================================= */
+
+.dropdown-menu .dropdown-item {
+    position: relative;
+    color: #555; /* Default gray text */
+    padding: 10px 20px; /* Default spacing */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: transparent !important; /* Overrides Bootstrap's default background highlight */
+}
+
+/* Action on hover: Text turns red and slides right */
+.dropdown-menu .dropdown-item:hover {
+    color: #e32828; 
+    padding-left: 35px; /* Pushes the text to the right to make room for the dash */
+}
+
+/* =========================================
+   3. The Animated Red Dash
+   ========================================= */
+
+/* The invisible starting state of the dash */
+.dropdown-menu .dropdown-item::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px; /* Starts with 0 width */
+    height: 2px;
+    background-color: #e32828; /* Red dash color */
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+/* Action on hover: Dash expands and appears */
+.dropdown-menu .dropdown-item:hover::before {
+    width: 10px; /* Dash grows to 10px long */
+    opacity: 1;
+}
+
+/* Optional: Make the parent "Blog" link turn red when the menu is open */
+.nav-item.dropdown:hover .nav-link {
+    color: #e32828 !important;
+}
+/* ---------------------------------------------DROPDOWN ANIMATION----------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+.we-serve{
+    text-align: center;
+    font-size: 25px;
+}
+
+button{
+    background-color: #e44c2a;
+    border: 2px solid grey;
+    border-radius: 3px;
+}
+.btn-theme-orange{
+    color: white;
+}
+
+
+/* =========================================
+   GALLERY GRID STYLING
+   ========================================= */
+
+/* The container that holds the image */
+.gallery-card {
+    width: 100%;
+    overflow: hidden; /* Hides the edges of the image when it zooms in on hover */
+    position: relative;
+    background-color: #f8f9fa; /* Slight placeholder background */
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.discover
+{
+    letter-spacing: 8px;
+}
+
+/* The actual image */
+.gallery-grid-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Magic line: Forces it to be a perfect square ALWAYS */
+    object-fit: cover; /* Prevents the image from squishing or stretching */
+    display: block;
+    transition: transform 0.4s ease; /* Smooth animation setup */
+    cursor: pointer;
+}
+
+/* Optional Hover Effect: Slight zoom to make it feel premium */
+.gallery-card:hover .gallery-grid-img {
+    transform: scale(1.08); /* Zooms the image in slightly */
+}
+/*=======================================================================================================*/
+
+
+.gallery-text-heading1
+{
+    font-size: 20px;
+    color: #e32828;
+    text-align: center;
+}
+
+.gallery-text-heading2
+{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 25px;
+}
+
+
+/* =========================================
+   TESTIMONIAL STYLING
+   ========================================= */
+
+/* The delicate horizontal line */
+.testimonial-divider {
+    width: 80px; /* Keeps the line short and centered */
+    height: 1px;
+    background-color: #888888; /* Medium grey color */
+}
+
+/* Ensure the theme color is applied to the name */
+.text-theme-orange {
+    color: #e54c2a !important; 
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+.chinese
+{
+    height: 1200px;
+    background-image: url(../homepagepic/backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------------------------Button----------------------------------------------- */
+.button1
+{
+    color: white;
+    width: 40%;
+    border-radius: 8px;
+    position: relative;
+    left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------FOOTER------------------------------------------------- */
+/* =========================================
+   FOOTER STYLING
+   ========================================= */
+
+.footer-section {
+    background-color: #ffffff;
+    font-family: inherit; /* Uses your website's default font */
+}
+
+/* Subtle letter spacing for the headings to make them look premium */
+.tracking-wide {
+    letter-spacing: 1px;
+}
+
+/* Forces the Latest News images to be perfect squares */
+.news-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+/* Forces the Gallery grid images to be perfect squares */
+.gallery-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Automatically makes the height match the width */
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Slight fade when hovering over gallery images */
+.gallery-img:hover {
+    opacity: 0.8;
+}
+
+/* Smooth color transition for links */
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+/* Change link color to your theme's red on hover */
+.footer-link:hover {
+    color: #e32828 !important; 
+}
+
+/* -----------------------------------------Serve Section----------------------------------------------------- */
+.serve-section{
+    margin: 40px;
+    padding: 20px;
+}

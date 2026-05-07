@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../Images/Tab_Logo.png"> <!-----------------------Tab_Logo---------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* =========================================
+   PAGE HEADER STYLING
+   ========================================= */
+
+.page-header {
+    background-color: #f8f9fa; /* A very clean, soft light gray */
+    border-bottom: 1px solid #eaeaea; /* Optional: adds a tiny line at the bottom */
+}
+
+.page-header .header-title {
+    font-weight: 300; /* Gives the text that thin, premium look */
+    letter-spacing: 2px; /* Spaces the letters out slightly */
+}
+
+/* Breadcrumb Styling */
+.breadcrumb-text {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Reusing your theme orange for the hover effect */
+.hover-orange {
+    transition: color 0.3s ease;
+}
+
+.hover-orange:hover {
+    color: #e54c2a !important; 
+}
+.home-menu
+{
+    text-align: center;
+}
+
+.veg-starter
+{
+    height: 1400px;
+    background-image: url(../homepagepic/vegBackground1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.veg-main-course
+{
+    height: 1700px;
+    background-image: url(../VegMainCourse/VegMain\ Course\ Backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.starter{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-course{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* =========================================
+   CONTACT FORM STYLING
+   ========================================= */
+
+.custom-form-control {
+    padding: 16px 20px; /* Makes the inputs taller and more spacious */
+    font-size: 0.95rem;
+    border-radius: 2px !important; /* Forces sharp, slightly crisp corners */
+    border: 1px solid #e0e0e0; /* Very light, delicate border */
+    transition: all 0.3s ease;
+}
+
+/* Make the placeholder text slightly lighter to match the image */
+.custom-form-control::placeholder {
+    color: #999999;
+}
+
+/* The focus state when a user clicks into the box */
+.custom-form-control:focus {
+    border-color: #e54c2a; /* Highlights the border with your theme orange */
+    box-shadow: 0 0 0 0.25rem rgba(229, 76, 42, 0.15); /* A soft orange glow */
+}
+/*===========================================================*/
+.button2
+{
+    background-color: #e54c2a;
+    border-radius: 3px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+                <a class="navbar-brand ps-5 fw-bold text1" href="./HOME.HTML">GoodLuck_ <i class="fa-solid fa-clover fa-clover1"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-5 gap-5">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold text2" aria-current="page" href="./HOME.HTML">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle fw-bold text2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">VEG</a></li>
+                    <li><a class="dropdown-item" href="./NON_VEG.html">NON-VEG</a></li>
+                    <li><a class="dropdown-item" href="./Beverages.html">BEVERAGES_____</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold text2" href="./About.html">ABOUT US</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold text2" href="./Reservation.html">RESERVE TABLE</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link active fw-bold no-underline" href="./Location.html"><i class="fa-solid fa-location-dot"></i></a>
+                 </li>
+                
+            </ul>
+          </div>
+        </div>
+    </nav><hr>
+    </header>
+
+<section class="page-header py-5 text-center">
+    <div class="container ">
+        
+        <h1 class="display-4 text-dark mb-3 header-title">MENU</h1>
+        
+        <div class="breadcrumb-text text-dark fs-6 d-inline-block">
+            <a href="#" class="text-decoration-none text-dark hover-orange home-menu">Home &gt; Menu &gt; <b>VEG</b></a> 
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery-section gx-5 gy-5 py-4 my-5 veg-starter">
+    <div class="container">
+        <h4 class="gallery-text-heading1 fw-bold pb-4 justify-content-center starter">VEG STARTER's</h4>
+        
+        <div class="row g-4 pt-5">
+            
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../Veg Starter/chili-baby-corn.jpg" alt="Sauce and Spices" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../Veg Starter/hara-bhara-kabab.webp" alt="Katsu Cutlet" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../Veg Starter/Veg momos.jpg" alt="Stir Fry Noodles" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../Veg Starter/Paneer-tikka.jpg" alt="Rice Bowl" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../Veg Starter/Masala-Papad.jpg" alt="Noodles with Chopsticks" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../Veg Starter/Chilli-Paneer-Restaurant-.webp" alt="Sushi Platter" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+        </div> </div>
+</section>
+
+
+<section class="gallery-section gx-5 gy-5 py-4 my-5 veg-main-course">
+    <div class="container">
+        <h4 class="gallery-text-heading1 fw-bold pb-4 justify-content-center main-course">VEG MAIN COURSE</h4>
+        
+        <div class="row g-4 pt-5">
+            
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Blackened-Roasted-Cauliflower.jpg" alt="Sauce and Spices" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Dal-Makhani.jpg" alt="Katsu Cutlet" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Mix Vegetables Medley.jpg" alt="Stir Fry Noodles" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Mix-Veg.jpg" alt="Rice Bowl" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Paneer-Butter-Masala.jpg" alt="Noodles with Chopsticks" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Rajma Masala.jpg" alt="Sushi Platter" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Risotto-Mushroom.jpg" alt="Rice Bowl" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Veg-Keema.jpg" alt="Noodles with Chopsticks" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                <div class="gallery-card">
+                    <img src="../VegMainCourse/Vegetable-biryani.jpg" alt="Sushi Platter" class="gallery-grid-img shadow-sm">
+                </div>
+            </div>
+
+        </div> </div>
+</section>
+
+<section class="contact-section py-2 bg-light text-center">
+    <div class="container">
+        
+        <span class="text-theme-orange tracking-wide fs-6">Got Suggestion?</span>
+        <h2 class="display-6 fw-bold text-dark mt-2 mb-5">Drop Us A Line</h2>
+
+        <div class="row justify-content-center text-start">
+            <div class="col-lg-8 col-md-10">
+                
+                <form action="#" method="POST">
+                    <div class="row g-4">
+                        
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-form-control shadow-sm" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control custom-form-control shadow-sm" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <input type="text" class="form-control custom-form-control shadow-sm" placeholder="Your Message Subject" required>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea class="form-control custom-form-control shadow-sm" rows="6" placeholder="Your Message Here" required></textarea>
+                        </div>
+
+                        <div class="col-12 mt-5">
+                            <button type="submit" class="btn btn-theme-orange px-4 py-2 button2">Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+
+
+
+
+<footer class="footer-section pt-4 mt-5 border-top" style="background-color: rgba(128, 128, 128, 0.3);">
+    <div class="container">
+        <div class="row gy-5">
+            
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-4 text-uppercase tracking-wide">About Us</h6>
+                <p class="text-muted fs-6 mb-4">
+                    The delicious romantic undisturbed raw platter will meld. Thick Skewers skillet natural, smoker soy sauce wait roux.
+                </p>
+                <ul class="list-unstyled text-muted fs-6">
+                    <li class="mb-2">Address: Mumbai, Maharashtra, India</li>
+                    <li class="mb-2">Email: contact@goodluck.com</li>
+                    <li class="mb-2">Phone: +91 8942 00 8221</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-4 text-uppercase tracking-wide">Latest News</h6>
+                
+                <div class="d-flex mb-4">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=150" alt="News 1" class="rounded news-img me-3 shadow-sm">
+                    <div>
+                        <a href="#" class="text-decoration-none text-dark fw-bold d-block mb-1 footer-link">Crafting Renders Aromatic</a>
+                        <small class="text-muted">December 17, 2026</small>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=150" alt="News 2" class="rounded news-img me-3 shadow-sm">
+                    <div>
+                        <a href="#" class="text-decoration-none text-dark fw-bold d-block mb-1 footer-link">Culinary Experience</a>
+                        <small class="text-muted">December 17, 2026</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-4 text-uppercase tracking-wide">Categories</h6>
+                <ul class="list-unstyled footer-categories">
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-muted footer-link">Breakfast</a></li>
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-muted footer-link">Desserts</a></li>
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-muted footer-link">Fastfood</a></li>
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-muted footer-link">Inspiration</a></li>
+                    <li class="mb-3"><a href="#" class="text-decoration-none text-muted footer-link">Starters</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-4 text-uppercase tracking-wide">Gallery</h6>
+                <div class="row g-2"> <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150" alt="Gallery 1" class="img-fluid rounded gallery-img shadow-sm">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=150" alt="Gallery 2" class="img-fluid rounded gallery-img shadow-sm">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=150" alt="Gallery 3" class="img-fluid rounded gallery-img shadow-sm">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=150" alt="Gallery 4" class="img-fluid rounded gallery-img shadow-sm">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=150" alt="Gallery 5" class="img-fluid rounded gallery-img shadow-sm">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=150" alt="Gallery 6" class="img-fluid rounded gallery-img shadow-sm">
+                    </div>
+                </div>
+            </div>
+
+        </div> <hr>
+            <p class="text-muted pb-3 fs-6">Copyright 2026 GoodLuck © All rights reserved</p>
+        </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
