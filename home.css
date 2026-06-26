@@ -318,7 +318,7 @@ button{
 .chinese
 {
     height: 1200px;
-    background-image: url(../homepagepic/backgroundimage.jpg);
+    background-image: url(Images/homepagepic/backgroundimage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
